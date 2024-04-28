@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.heading{
+    position: absolute;
+    top: 60px;
+}
+.button1{
+    position: absolute; 
+    top: 20px;
+    width: 100px;
+    height: 35px; 
+    background-color:black; 
+    color: white;
+    cursor: pointer;
+ } 
+.clock-container{
+    position: relative;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    color: black;
+    text-align: center; 
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px 3px  black;
+    /* animation: chcolor 6s infinite; */
+}
+/* @keyframes chcolor {
+    from{
+        background-color: grey;
+    }
+    /* to{
+        background-color: #556B2F;
+    } */
+    /* to{ */
+        /* background-color: red; */
+    /* } */
+/* }  */
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 10px;
+    font-size: 20px;
+}
+.clock span b{
+    display: block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+.clock::before{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    content: '';
+    border-radius: 8px;
+
+}
+.hand i{
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--clr);
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#hr{
+    background-color: red;
+    /* animation: mymove 86400s infinite; */
+}
+#min{
+    background-color: blue;
+    /* animation: mymove 3600s infinite; */
+}
+#sec{
+    background-color: green;
+    /* animation: mymove 60s infinite; */
+}
+/* @keyframes mymove{
+    50%{
+        transform: rotate(360deg);
+    }
+}  */
+button{
+    position: absolute;
+    background-color: black;
+    color: aliceblue;
+    /* left:410px; */
+    height: 20px;
+    cursor: pointer;
+}
+.stime{
+    width: 200px;
+    height: 52px;
+    background-color: white;
+    position: absolute;
+    top: 650px;
+    font-size: 40px;
+    padding: 10px;
+    text-align:center;
+    color: black;
+}
